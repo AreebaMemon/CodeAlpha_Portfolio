@@ -1,0 +1,120 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: inherit;
+    border-top: 1px solid var(--text-color);
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #home-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .home-content {
+    align-items: center;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .home-image {
+    order: -1;
+  }
+
+  .profile-image {
+    max-height: 300px;
+  }
+  #about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-content {
+    align-items: center;
+  }
+
+  .common-section {
+    padding: 20px 15px;
+  }
+
+  .section-title {
+    font-size: 1.3em;
+  }
+
+  .section-heading {
+    font-size: 1.8em;
+  }
+
+  .section-description {
+    font-size: 1em;
+  }
+
+  .service-item {
+    min-width: 200px;
+    font-size: 18px;
+  }
+  .service-line {
+    height: 12px;
+  }
+
+  .skill-box {
+    width: 220px;
+    height: auto;
+    padding: 20px;
+  }
+  .skill-icon {
+    font-size: 2em;
+  }
+  .title {
+    font-size: 1em;
+  }
+
+  #contact-form,
+  #contact-info {
+    max-width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  #contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .social-icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}

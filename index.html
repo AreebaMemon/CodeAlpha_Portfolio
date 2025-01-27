@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="logo">
+          <img src="Logo.png" alt="Areeba's Portfolio Logo" />
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#mlsa">MLSA</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+      </nav>
+    </header>
+
+    <section id="home-section">
+      <div class="home-content">
+        <h1 class="home-title">Welcome to My Portfolio</h1>
+        <h2 class="home-subtitle">
+          I'm <span class="highlighted-name">Areeba</span>
+        </h2>
+        <h3 class="home-role">Front-End Developer</h3>
+        <p class="home-description">
+          I create responsive and visually appealing websites.
+        </p>
+        <div class="button-container">
+          <button class="primary-button">ABOUT ME</button>
+          <button class="primary-button">DOWNLOAD CV</button>
+        </div>
+
+        <div class="social-icons" aria-label="Social Media Links">
+          <a href="https://facebook.com" target="_blank" title="Facebook Profile"><i class="fa-brands fa-facebook social-icon"></i></a>
+          <a href="https://linkedin.com" target="_blank" title="LinkedIn Profile"><i class="fa-brands fa-linkedin social-icon"></i></a>
+          <a href="https://medium.com" target="_blank" title="Medium Blog"><i class="fa-brands fa-medium social-icon"></i></a>
+          <a href="https://github.com" target="_blank" title="GitHub Profile"><i class="fa-brands fa-github social-icon"></i></a>
+        </div>
+      </div>
+
+      <div class="home-image">
+        <img src="Pic.png" alt="Areeba Memon's Profile Picture" class="profile-image"/>
+      </div>
+    </section>
+
+    <section id="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="remove.png" alt="Areeba's Image" class="profile-picture" />
+        </div>
+        <div class="about-content">
+          <h6 class="about-title">Areeba Memon</h6>
+          <p class="about-role">Front-End Developer</p>
+          <p class="about-description">
+            Hello, I'm Areeba, a web developer with a love for coding and
+            creativity. When I'm not building web applications, you can find me
+            exploring new technologies and ideas.
+          </p>
+          <p class="about-description">
+            I'm excited to combine my technical skills with my passion for
+            innovation to deliver exceptional digital experiences. Let's connect
+            and create something amazing together!
+          </p>
+          <button class="primary-button setwidth">Download CV</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="common-section">
+      <p class="section-title">Services</p>
+      <h6 class="section-heading">What I Do</h6>
+      <p class="section-description">These services are offered by me</p>
+    </div>
+
+    <div id="service-section">
+      <div class="service-item">
+        <span class="title">Web Development</span>
+        <div class="service-line" style="--fill: 80%"></div>
+      </div>
+      <div class="service-item">
+        <span class="title">Node</span>
+        <div class="service-line" style="--fill: 40%"></div>
+      </div>
+      <div class="service-item">
+        <span class="title">C++</span>
+        <div class="service-line" style="--fill: 60%"></div>
+      </div>
+      <div class="service-item">
+        <span class="title">Java</span>
+        <div class="service-line" style="--fill: 70%"></div>
+      </div>
+    </div>
+
+    <div class="common-section">
+      <p class="section-title">Skills</p>
+      <h6 class="section-heading">Why Choose Me</h6>
+      <p class="section-description">
+        I’m Areeba, a web developer passionate about coding and creativity. With
+        expertise in HTML, CSS, and JavaScript, I create responsive and engaging
+        websites. Let’s collaborate to turn your ideas into reality!
+      </p>
+    </div>
+
+    <section id="skills-section">
+      <div class="skill-box">
+        <div class="skill-icon">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <p class="title">Programming</p>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-icon">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <p class="title">Database</p>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-icon">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <p class="title">Web Developer</p>
+      </div>
+    </section>
+
+    <div class="common-section">
+      <p class="section-title">Projects</p>
+      <h6 class="section-heading">Check My Wonderful Works</h6>
+      <p class="section-description">
+        I have developed several projects using HTML, CSS, and JavaScript. These
+        include a task management application, a real-time word counter, and a
+        user-friendly calculator for basic mathematical operations. Explore
+        these projects to see my skills in action!
+      </p>
+    </div>
+
+    <div class="projects-section">
+      <div class="project-box">
+        <div class="project-image" style="background-image: url('Todolist.png')"></div>
+        <div class="content">
+          <h1 class="project-title">To-Do List</h1>
+          <p class="project-description">
+            A simple to-do list application built using HTML, CSS, and
+            JavaScript.
+          </p>
+          <button class="primary-button">
+            <a href="https://areebamemon.github.io/TO-DO-List/" target="_blank">View My Project</a>
+          </button>
+        </div>
+      </div>
+
+     
+      <div class="project-box">
+        <div class="project-image" style="background-image: url('wordcounter.jpg')"></div>
+        <div class="content">
+          <h1 class="project-title">Word Counter</h1>
+          <p class="project-description">
+            Word Counter to track the number of words in your text.
+          </p>
+          <button class="primary-button">
+            <a href="https://areebamemon.github.io/WordCounter/" target="_blank">View My Project</a>
+          </button>
+        </div>
+      </div>
+
+    
+      <div class="project-box">
+        <div class="project-image" style="background-image: url('calculator.jpg')"></div>
+        <div class="content">
+          <h1 class="project-title">Calculator</h1>
+          <p class="project-description">
+            This calculator takes two values as input and performs operations on
+            them.
+          </p>
+          <button class="primary-button">
+            <a href="https://areebamemon.github.io/Calculator-for-two-values/" target="_blank">View My Project</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="common-section">
+      <p class="section-title">MLSA</p>
+      <h6 class="section-heading">My Journey</h6>
+      <p class="section-description">
+        Go through my journey from the beginning to where I am today! From the
+        Application video to becoming a BETA ambassador.
+      </p>
+    </div>
+
+    <div class="projects-section">
+      <div class="project-box">
+        <div
+          class="project-image"
+          style="background-image: url('host.jpeg')"
+        ></div>
+        <div class="content">
+          <h1 class="project-title">Online Event</h1>
+          <p class="project-description">
+            Session on Hosting Websites on Azure.
+          </p>
+          <button class="primary-button">
+            <a href="https://www.youtube.com/watch?v=fC6_w8ouBSU" target="_blank">View My Video</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-image" style="background-image: url('maxresdefault.jpg')"></div>
+        <div class="content">
+          <h1 class="project-title">Selection Video</h1>
+          <p class="project-description">
+            Entry video for Microsoft Learn Student Ambassadors.
+          </p>
+          <button class="primary-button">
+            <a href="https://www.youtube.com/watch?v=AdGIsJ4sTDo" target="_blank">View My Video</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-image" style="background-image: url('second.png')"></div>
+        <div class="content">
+          <h1 class="project-title">JavaScript Session</h1>
+          <p class="project-description">
+            Session on JavaScript using Visual Studio.
+          </p>
+          <button class="primary-button">
+            <a href="https://www.youtube.com/watch?v=dkXBUhY_ZuE" target="_blank">View My Video</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="common-section">
+      <h6 class="section-heading">Contact Me</h6>
+    </div>
+
+    <div id="contact-section">
+      <div id="contact-form">
+        <h6>Available</h6>
+        <h2>Get In Touch</h2>
+        <form>
+          <input
+            type="email" name="email" id="email" placeholder="Enter your email" required/>
+          <input
+            type="tel" name="phone" id="phone" placeholder="Enter your phone number" required/>
+          <textarea
+            style="height: 100px" name="message" id="message" placeholder="Message" required ></textarea>
+          <input type="submit" value="Submit"  class="primary-button"/>
+        </form>
+      </div>
+
+      <div id="contact-info">
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="info-text">
+            <h3>Location</h3>
+            <p>Your City, Your Country</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <div class="info-text">
+            <h3>Phone</h3>
+            <p>+123 456 7890</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="info-text">
+            <h3>Email</h3>
+            <p>yourname@example.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <nav class="social-icons social" aria-label="Social Media Links">
+          <a href="https://facebook.com" target="_blank"title="Facebook Profile"><i class="fa-brands fa-facebook"></i></a>
+          <a
+            href="https://linkedin.com" target="_blank" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://medium.com" target="_blank" title="Medium Blog"><i class="fa-brands fa-medium"></i></a>
+          <a href="https://github.com" target="_blank" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+        </nav>
+        <p>&copy; 2024 Areeba Memon. All rights reserved.</p>
+        <p>Made with ❤️ by <a href="#">Areeba Memon</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
